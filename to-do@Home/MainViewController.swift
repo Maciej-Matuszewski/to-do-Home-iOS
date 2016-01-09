@@ -51,6 +51,11 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let addButton = generateButton(NSLocalizedString("Add tasks", comment: "prompt_add_tasks"), function: "addTaskBtnFunc", controller: self, color: kColorAccent)
         view.addSubview(addButton)
         
+        if(DeviceType.IS_IPHONE_4_OR_LESS){
+            view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-(==10)-[image(==200)]-(==20)-[label]-(>=30)-[button]", options: NSLayoutFormatOptions.AlignAllCenterX, metrics: nil, views: ["image" : imageView, "label" : nothingLabel, "button" : addButton]))
+        }else{
+            view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-(==70)-[image(==200)]-(==20)-[label]-(>=30)-[button]", options: NSLayoutFormatOptions.AlignAllCenterX, metrics: nil, views: ["image" : imageView, "label" : nothingLabel, "button" : addButton]))
+        }
         
         
         view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-(==70)-[image(==200)]-(==20)-[label]-(>=30)-[button]", options: NSLayoutFormatOptions.AlignAllCenterX, metrics: nil, views: ["image" : imageView, "label" : nothingLabel, "button" : addButton]))
