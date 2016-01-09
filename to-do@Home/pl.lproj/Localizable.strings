@@ -1,0 +1,205 @@
+/* Add_home_title */
+"Add home" = "Dołącz do domu";
+
+/* add_task_title */
+"Add task" = "Dodaj zadanie";
+
+/* prompt_add_tasks */
+"Add tasks" = "Dodaj zadanie";
+
+/* prompt_all_field_required
+   prompt_all_fields */
+"All fields are required" = "Wszystkie pola są wymagane";
+
+/* prompt_are_you_sure */
+"Are you sure?" = "Jesteś pewien?";
+
+/* change_email_title
+   prompt_change_email */
+"Change email" = "Zmień email";
+
+/* change_name_title
+   prompt_change_name */
+"Change name" = "Zmień imię";
+
+/* change_password_title
+   prompt_change_password */
+"Change password" = "Zmień hasło";
+
+/* prompt_share_text */
+"Check this app!" = "Sprawdź tą appke!";
+
+/* congratulations_title */
+"Congratulations!" = "Gratulacje!";
+
+/* prompt_connect_to_home */
+"Connect to home" = "Przyłącz do domu";
+
+/* prompt_create_home */
+"Create home" = "Utwórz dom";
+
+/* prompt_delete */
+"Delete" = "Usuń";
+
+/* prompt_disconnect */
+"Disconnect" = "Rozłącz";
+
+/* prompt_done */
+"Done" = "Gotowe";
+
+/* prompt_edit */
+"Edit" = "Edytuj";
+
+/* edit_task_title */
+"Edit task" = "Edytuj zadanie";
+
+/* prompt_email */
+"Email" = "Email";
+
+/* prompt_email_required */
+"Email field is required" = "Pole email jest wymagane";
+
+/* Error_title */
+"Error" = "Błąd";
+
+/* prompt_frequency */
+"Frequency" = "Częstotliwość";
+
+/* prompt_bigger_than_zero */
+"Frequency have to be bigger than zero!" = "Częstotliwość musi być większa od zera";
+
+/* prompt_history */
+"History" = "Historia";
+
+/* prompt_home_id */
+"Home ID" = "Identyfikator domu";
+
+/* prompt_home_id */
+"Home ID:" = "Identyfikator domu:";
+
+/* prompt_home_password */
+"Home Password" = "Hasło domu";
+
+/* home_manager_title
+   prompt_home_manager */
+"Home manager" = "Menadżer domu";
+
+/* prompt_home_password */
+"Home password:" = "Hasło domu:";
+
+/* prompt_in */
+"In" = "W ciągu";
+
+/* Login_button
+   Login_title
+   Welcome_btnLogin */
+"Login" = "Zaloguj";
+
+/* prompt_logout */
+"Logout" = "Wyloguj";
+
+/* prompt_name */
+"Name" = "Imię";
+
+/* prompt_name_required */
+"Name field is required" = "Pole imienia jest wymagane";
+
+/* prompt_no */
+"No" = "Nie";
+
+/* prompt_no_tasks */
+"No tasks!" = "Brak zadań!";
+
+/* prompt_not_done */
+"Not done" = "Nie gotowe";
+
+/* prompt_nothing_to_show */
+"Nothing to show!" = "Nic do pokazania!";
+
+/* prompt_now */
+"Now" = "Teraz";
+
+/* prompt_number_types */
+"Number of task types" = "Liczba typów zadań";
+
+/* prompt_ok */
+"OK" = "Ok";
+
+/* prompt_OR */
+"OR" = "LUB";
+
+/* prompt_ok */
+"Ok" = "Ok";
+
+/* prompt_password */
+"Password" = "Hasło";
+
+/* prompt_password_not_correct */
+"Password is not correct!" = "Hasło jest niepoprawne!";
+
+/* prompt_different_passwords */
+"Passwords are not identicaly" = "Hasła się różnią";
+
+/* prompt_profile_updated */
+"Profile has been updated" = "Profil został zaktualizowany";
+
+/* prompt_pull_to_refresh */
+"Pull to refresh" = "Pociągnij by odświeżyć";
+
+/* Register_button
+   Register_title
+   Welcome_btnRegister */
+"Register" = "Zarejestruj";
+
+/* prompt_repeat_password */
+"Repeat password" = "Powtórz hasło";
+
+/* prompt_save */
+"Save" = "Zapisz";
+
+/* prompt_settings
+   settings_title */
+"Settings" = "Ustawienia";
+
+/* prompt_share */
+"Share" = "Podziel się";
+
+/* Success_title */
+"Success" = "Powodzenie";
+
+/* prompt_summary
+   Summary_title */
+"Summary" = "Podsumowanie";
+
+/* prompt_tasks_manager
+   task_manager_title */
+"Tasks manager" = "Menadżer domu";
+
+/* prompt_title */
+"Title" = "Tytuł";
+
+/* prompt_today
+   Today_title */
+"Today" = "Dziś";
+
+/* prompt_tomorrow */
+"Tomorrow" = "Jutro";
+
+/* prompt_undone */
+"Undone" = "Nie zrobiono";
+
+/* prompt_yes */
+"Yes" = "Tak";
+
+/* prompt_yesterday */
+"Yesterday" = "Wczoraj";
+
+/* prompt_home_created */
+"Your home has been created" = "Twój dom został utworzony";
+
+/* prompt_days */
+"days" = "dni";
+
+/* prompt_days_ago */
+"days ago" = "dni temu";
+

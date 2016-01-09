@@ -7,11 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140E94C51C3BE16100901FA7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E94C41C3BE16100901FA7 /* WelcomeViewController.swift */; };
+		140E94C81C3BE3B200901FA7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E94C71C3BE3B200901FA7 /* Constants.swift */; };
+		140E94CA1C3C181E00901FA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E94C91C3C181E00901FA7 /* LoginViewController.swift */; };
+		140E94CC1C3C394F00901FA7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E94CB1C3C394F00901FA7 /* RegisterViewController.swift */; };
+		140E94CE1C3C441A00901FA7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E94CD1C3C441A00901FA7 /* MainViewController.swift */; };
+		140E94D01C3C5AA700901FA7 /* TaskMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E94CF1C3C5AA700901FA7 /* TaskMainTableViewCell.swift */; };
+		140E94D21C3C7F1000901FA7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E94D11C3C7F1000901FA7 /* MenuViewController.swift */; };
+		140E94D41C3C937600901FA7 /* AddHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E94D31C3C937600901FA7 /* AddHomeViewController.swift */; };
+		141669691C3DCC620060C9CE /* SummaryTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141669681C3DCC620060C9CE /* SummaryTabBarController.swift */; };
+		1416696B1C3DCE710060C9CE /* SummaryDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416696A1C3DCE710060C9CE /* SummaryDoneViewController.swift */; };
+		1416696D1C3DDFED0060C9CE /* SummaryNotdoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416696C1C3DDFED0060C9CE /* SummaryNotdoneViewController.swift */; };
+		1416696F1C3DEDF20060C9CE /* SummaryHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416696E1C3DEDF20060C9CE /* SummaryHistoryViewController.swift */; };
+		141669721C3E4D730060C9CE /* TaskDoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141669711C3E4D730060C9CE /* TaskDoneTableViewCell.swift */; };
+		141669741C3E5E6A0060C9CE /* HomeManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141669731C3E5E6A0060C9CE /* HomeManagerViewController.swift */; };
+		141669761C3F5DDB0060C9CE /* YesNoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141669751C3F5DDB0060C9CE /* YesNoViewController.swift */; };
+		141669781C3F69E30060C9CE /* HomeCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141669771C3F69E30060C9CE /* HomeCreatedViewController.swift */; };
+		1416697C1C3F72BC0060C9CE /* TasksManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416697B1C3F72BC0060C9CE /* TasksManagerViewController.swift */; };
+		1416697E1C3F7DA70060C9CE /* AddEditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416697D1C3F7DA70060C9CE /* AddEditTaskViewController.swift */; };
 		14185B191C3BD8840071E94E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14185B181C3BD8840071E94E /* AppDelegate.swift */; };
 		14185B201C3BD8840071E94E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14185B1F1C3BD8840071E94E /* Assets.xcassets */; };
 		14185B231C3BD8840071E94E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14185B211C3BD8840071E94E /* LaunchScreen.storyboard */; };
 		14185B2E1C3BD8840071E94E /* to_do_HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14185B2D1C3BD8840071E94E /* to_do_HomeTests.swift */; };
 		14185B391C3BD8840071E94E /* to_do_HomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14185B381C3BD8840071E94E /* to_do_HomeUITests.swift */; };
+		146FCFE31C3F9B41000E1DE7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146FCFE21C3F9B41000E1DE7 /* SettingsViewController.swift */; };
+		146FCFE51C3FB21A000E1DE7 /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146FCFE41C3FB21A000E1DE7 /* ChangeNameViewController.swift */; };
+		146FCFE71C3FB7CB000E1DE7 /* ChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146FCFE61C3FB7CB000E1DE7 /* ChangeEmailViewController.swift */; };
+		147B34461C3FB96800C13E01 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B34451C3FB96800C13E01 /* ChangePasswordViewController.swift */; };
+		14D019FC1C3D4F080005A915 /* Generators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D019FB1C3D4F080005A915 /* Generators.swift */; };
+		14F6A0EB1C4015B600DA5DDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14F6A0ED1C4015B600DA5DDA /* InfoPlist.strings */; };
+		14F6A0F01C4015B700DA5DDA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14F6A0F21C4015B700DA5DDA /* Localizable.strings */; };
+		14F6A0F51C4015B700DA5DDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14F6A0F71C4015B700DA5DDA /* InfoPlist.strings */; };
+		14F6A0FA1C4015B800DA5DDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14F6A0FC1C4015B800DA5DDA /* InfoPlist.strings */; };
 		37C55E66881ABD374A46D8E2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69A227B4DD552C6F84B78B4 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +60,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		140E94C41C3BE16100901FA7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		140E94C71C3BE3B200901FA7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		140E94C91C3C181E00901FA7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		140E94CB1C3C394F00901FA7 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		140E94CD1C3C441A00901FA7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		140E94CF1C3C5AA700901FA7 /* TaskMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskMainTableViewCell.swift; sourceTree = "<group>"; };
+		140E94D11C3C7F1000901FA7 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		140E94D31C3C937600901FA7 /* AddHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHomeViewController.swift; sourceTree = "<group>"; };
+		141669681C3DCC620060C9CE /* SummaryTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryTabBarController.swift; sourceTree = "<group>"; };
+		1416696A1C3DCE710060C9CE /* SummaryDoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryDoneViewController.swift; sourceTree = "<group>"; };
+		1416696C1C3DDFED0060C9CE /* SummaryNotdoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryNotdoneViewController.swift; sourceTree = "<group>"; };
+		1416696E1C3DEDF20060C9CE /* SummaryHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryHistoryViewController.swift; sourceTree = "<group>"; };
+		141669711C3E4D730060C9CE /* TaskDoneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDoneTableViewCell.swift; sourceTree = "<group>"; };
+		141669731C3E5E6A0060C9CE /* HomeManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeManagerViewController.swift; sourceTree = "<group>"; };
+		141669751C3F5DDB0060C9CE /* YesNoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YesNoViewController.swift; sourceTree = "<group>"; };
+		141669771C3F69E30060C9CE /* HomeCreatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCreatedViewController.swift; sourceTree = "<group>"; };
+		1416697B1C3F72BC0060C9CE /* TasksManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksManagerViewController.swift; sourceTree = "<group>"; };
+		1416697D1C3F7DA70060C9CE /* AddEditTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditTaskViewController.swift; sourceTree = "<group>"; };
 		14185B151C3BD8840071E94E /* to-do@Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "to-do@Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14185B181C3BD8840071E94E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14185B1F1C3BD8840071E94E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +89,16 @@
 		14185B341C3BD8840071E94E /* to-do@HomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "to-do@HomeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14185B381C3BD8840071E94E /* to_do_HomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = to_do_HomeUITests.swift; sourceTree = "<group>"; };
 		14185B3A1C3BD8840071E94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		146FCFE21C3F9B41000E1DE7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		146FCFE41C3FB21A000E1DE7 /* ChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
+		146FCFE61C3FB7CB000E1DE7 /* ChangeEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewController.swift; sourceTree = "<group>"; };
+		147B34451C3FB96800C13E01 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		14D019FB1C3D4F080005A915 /* Generators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generators.swift; sourceTree = "<group>"; };
+		14F6A0E81C4014B400DA5DDA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		14F6A0EC1C4015B600DA5DDA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14F6A0F11C4015B700DA5DDA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14F6A0F61C4015B700DA5DDA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14F6A0FB1C4015B800DA5DDA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6DCB1307585E028444A8F9DE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A2B451507321136AE862D02C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D69A227B4DD552C6F84B78B4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +130,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		140E94D51C3C938A00901FA7 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				140E94C41C3BE16100901FA7 /* WelcomeViewController.swift */,
+				140E94C91C3C181E00901FA7 /* LoginViewController.swift */,
+				140E94CB1C3C394F00901FA7 /* RegisterViewController.swift */,
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+		140E94D61C3C93A000901FA7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				140E94CF1C3C5AA700901FA7 /* TaskMainTableViewCell.swift */,
+				141669711C3E4D730060C9CE /* TaskDoneTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		141669701C3DEE990060C9CE /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				141669681C3DCC620060C9CE /* SummaryTabBarController.swift */,
+				1416696A1C3DCE710060C9CE /* SummaryDoneViewController.swift */,
+				1416696C1C3DDFED0060C9CE /* SummaryNotdoneViewController.swift */,
+				1416696E1C3DEDF20060C9CE /* SummaryHistoryViewController.swift */,
+			);
+			name = Summary;
+			sourceTree = "<group>";
+		};
+		141669791C3F72470060C9CE /* Home Manager */ = {
+			isa = PBXGroup;
+			children = (
+				141669731C3E5E6A0060C9CE /* HomeManagerViewController.swift */,
+				140E94D31C3C937600901FA7 /* AddHomeViewController.swift */,
+				141669771C3F69E30060C9CE /* HomeCreatedViewController.swift */,
+			);
+			name = "Home Manager";
+			sourceTree = "<group>";
+		};
+		1416697A1C3F727E0060C9CE /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				140E94C71C3BE3B200901FA7 /* Constants.swift */,
+				14D019FB1C3D4F080005A915 /* Generators.swift */,
+				141669751C3F5DDB0060C9CE /* YesNoViewController.swift */,
+				140E94D61C3C93A000901FA7 /* Cells */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 		14185B0C1C3BD8840071E94E = {
 			isa = PBXGroup;
 			children = (
@@ -100,10 +206,20 @@
 		14185B171C3BD8840071E94E /* to-do@Home */ = {
 			isa = PBXGroup;
 			children = (
-				14185B181C3BD8840071E94E /* AppDelegate.swift */,
+				14F6A0F21C4015B700DA5DDA /* Localizable.strings */,
+				14F6A0ED1C4015B600DA5DDA /* InfoPlist.strings */,
+				14185B241C3BD8840071E94E /* Info.plist */,
 				14185B1F1C3BD8840071E94E /* Assets.xcassets */,
 				14185B211C3BD8840071E94E /* LaunchScreen.storyboard */,
-				14185B241C3BD8840071E94E /* Info.plist */,
+				14185B181C3BD8840071E94E /* AppDelegate.swift */,
+				1416697A1C3F727E0060C9CE /* Support */,
+				140E94D51C3C938A00901FA7 /* Welcome */,
+				141669701C3DEE990060C9CE /* Summary */,
+				141669791C3F72470060C9CE /* Home Manager */,
+				146FCFE11C3F9AF9000E1DE7 /* Tasks Manager */,
+				147B34471C3FC04A00C13E01 /* Settings */,
+				140E94D11C3C7F1000901FA7 /* MenuViewController.swift */,
+				140E94CD1C3C441A00901FA7 /* MainViewController.swift */,
 			);
 			path = "to-do@Home";
 			sourceTree = "<group>";
@@ -111,6 +227,7 @@
 		14185B2C1C3BD8840071E94E /* to-do@HomeTests */ = {
 			isa = PBXGroup;
 			children = (
+				14F6A0FC1C4015B800DA5DDA /* InfoPlist.strings */,
 				14185B2D1C3BD8840071E94E /* to_do_HomeTests.swift */,
 				14185B2F1C3BD8840071E94E /* Info.plist */,
 			);
@@ -120,10 +237,31 @@
 		14185B371C3BD8840071E94E /* to-do@HomeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				14F6A0F71C4015B700DA5DDA /* InfoPlist.strings */,
 				14185B381C3BD8840071E94E /* to_do_HomeUITests.swift */,
 				14185B3A1C3BD8840071E94E /* Info.plist */,
 			);
 			path = "to-do@HomeUITests";
+			sourceTree = "<group>";
+		};
+		146FCFE11C3F9AF9000E1DE7 /* Tasks Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1416697B1C3F72BC0060C9CE /* TasksManagerViewController.swift */,
+				1416697D1C3F7DA70060C9CE /* AddEditTaskViewController.swift */,
+			);
+			name = "Tasks Manager";
+			sourceTree = "<group>";
+		};
+		147B34471C3FC04A00C13E01 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				146FCFE21C3F9B41000E1DE7 /* SettingsViewController.swift */,
+				146FCFE41C3FB21A000E1DE7 /* ChangeNameViewController.swift */,
+				146FCFE61C3FB7CB000E1DE7 /* ChangeEmailViewController.swift */,
+				147B34451C3FB96800C13E01 /* ChangePasswordViewController.swift */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 		60EE3F23497B05E49B8950C5 /* Frameworks */ = {
@@ -156,6 +294,7 @@
 				14185B131C3BD8840071E94E /* Resources */,
 				2407B8CB0263AA25CBDFFEF5 /* Embed Pods Frameworks */,
 				54F6C47514A00C74F81815F3 /* Copy Pods Resources */,
+				149CB0851C401EB50081C327 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -214,6 +353,12 @@
 				TargetAttributes = {
 					14185B141C3BD8840071E94E = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TLA9984P8M;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					14185B281C3BD8840071E94E = {
 						CreatedOnToolsVersion = 7.2;
@@ -251,6 +396,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				14185B231C3BD8840071E94E /* LaunchScreen.storyboard in Resources */,
+				14F6A0F01C4015B700DA5DDA /* Localizable.strings in Resources */,
+				14F6A0EB1C4015B600DA5DDA /* InfoPlist.strings in Resources */,
 				14185B201C3BD8840071E94E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F6A0FA1C4015B800DA5DDA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,12 +414,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F6A0F51C4015B700DA5DDA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		149CB0851C401EB50081C327 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 8fe337878fbd78c87950b002a6cdb4263d5615cb c757e06997dcaf9d8c8af7872b649dc51804dcb6360d5c28a41d84a7e869f058";
+		};
 		2407B8CB0263AA25CBDFFEF5 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,7 +486,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140E94D41C3C937600901FA7 /* AddHomeViewController.swift in Sources */,
+				140E94D01C3C5AA700901FA7 /* TaskMainTableViewCell.swift in Sources */,
+				146FCFE31C3F9B41000E1DE7 /* SettingsViewController.swift in Sources */,
+				1416696F1C3DEDF20060C9CE /* SummaryHistoryViewController.swift in Sources */,
+				140E94CA1C3C181E00901FA7 /* LoginViewController.swift in Sources */,
+				141669781C3F69E30060C9CE /* HomeCreatedViewController.swift in Sources */,
+				140E94CC1C3C394F00901FA7 /* RegisterViewController.swift in Sources */,
+				141669721C3E4D730060C9CE /* TaskDoneTableViewCell.swift in Sources */,
 				14185B191C3BD8840071E94E /* AppDelegate.swift in Sources */,
+				147B34461C3FB96800C13E01 /* ChangePasswordViewController.swift in Sources */,
+				1416696B1C3DCE710060C9CE /* SummaryDoneViewController.swift in Sources */,
+				141669691C3DCC620060C9CE /* SummaryTabBarController.swift in Sources */,
+				140E94CE1C3C441A00901FA7 /* MainViewController.swift in Sources */,
+				1416697E1C3F7DA70060C9CE /* AddEditTaskViewController.swift in Sources */,
+				140E94C81C3BE3B200901FA7 /* Constants.swift in Sources */,
+				141669761C3F5DDB0060C9CE /* YesNoViewController.swift in Sources */,
+				140E94C51C3BE16100901FA7 /* WelcomeViewController.swift in Sources */,
+				1416696D1C3DDFED0060C9CE /* SummaryNotdoneViewController.swift in Sources */,
+				146FCFE51C3FB21A000E1DE7 /* ChangeNameViewController.swift in Sources */,
+				1416697C1C3F72BC0060C9CE /* TasksManagerViewController.swift in Sources */,
+				146FCFE71C3FB7CB000E1DE7 /* ChangeEmailViewController.swift in Sources */,
+				141669741C3E5E6A0060C9CE /* HomeManagerViewController.swift in Sources */,
+				140E94D21C3C7F1000901FA7 /* MenuViewController.swift in Sources */,
+				14D019FC1C3D4F080005A915 /* Generators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,8 +549,41 @@
 			isa = PBXVariantGroup;
 			children = (
 				14185B221C3BD8840071E94E /* Base */,
+				14F6A0E81C4014B400DA5DDA /* pl */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		14F6A0ED1C4015B600DA5DDA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14F6A0EC1C4015B600DA5DDA /* pl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		14F6A0F21C4015B700DA5DDA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14F6A0F11C4015B700DA5DDA /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		14F6A0F71C4015B700DA5DDA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14F6A0F61C4015B700DA5DDA /* pl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		14F6A0FC1C4015B800DA5DDA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14F6A0FB1C4015B800DA5DDA /* pl */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -391,6 +609,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -435,6 +654,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -457,10 +677,17 @@
 			baseConfigurationReference = A2B451507321136AE862D02C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "to-do@Home/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gr3mlin106.to-do-Home";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gr3mlin106.toDoAtHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -469,10 +696,17 @@
 			baseConfigurationReference = 6DCB1307585E028444A8F9DE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "to-do@Home/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gr3mlin106.to-do-Home";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gr3mlin106.toDoAtHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
