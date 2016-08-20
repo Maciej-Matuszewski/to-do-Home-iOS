@@ -41,14 +41,9 @@ class SummaryHistoryViewController: UIViewController, UITableViewDataSource, UIT
         
         tableView.delegate = self
         tableView.dataSource = self
+        loadData()
         
     }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        loadData()
-    }
-    
     
     func refresh(sender:AnyObject)
     {

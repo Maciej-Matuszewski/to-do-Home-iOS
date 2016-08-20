@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="to-do@Home/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="pl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.2" build-num="7C68"/>
+    </header>
+    <body/>
+  </file>
+  <file original="to-do@Home/Info.plist" source-language="en" datatype="plaintext" target-language="pl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.2" build-num="7C68"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="to-do@Home/Localizable.strings" source-language="en" datatype="plaintext" target-language="pl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.2" build-num="7C68"/>
+    </header>
+    <body>
+      <trans-unit id=" add type of task: \n">
+        <source> add type of task: 
+</source>
+        <note>feed_add_type</note>
+      </trans-unit>
+      <trans-unit id=" created home!">
+        <source> created home!</source>
+        <note>feed_created_home</note>
+      </trans-unit>
+      <trans-unit id=" delete type of task: \n">
+        <source> delete type of task: 
+</source>
+        <note>feed_delete_type</note>
+      </trans-unit>
+      <trans-unit id=" disconected from home!">
+        <source> disconected from home!</source>
+        <note>feed_disconect_home</note>
+      </trans-unit>
+      <trans-unit id=" dislike">
+        <source> dislike</source>
+        <note>feed_dislike</note>
+      </trans-unit>
+      <trans-unit id=" edit type of task: \n">
+        <source> edit type of task: 
+</source>
+        <note>feed_edit_type</note>
+      </trans-unit>
+      <trans-unit id=" joined to home!">
+        <source> joined to home!</source>
+        <note>feed_joined_home</note>
+      </trans-unit>
+      <trans-unit id=" like">
+        <source> like</source>
+        <note>feed_like</note>
+      </trans-unit>
+      <trans-unit id=" marked">
+        <source> marked</source>
+        <note>feed_marked</note>
+      </trans-unit>
+      <trans-unit id="Add home">
+        <source>Add home</source>
+        <target>Dołącz do domu</target>
+        <note>Add_home_title</note>
+      </trans-unit>
+      <trans-unit id="Add task">
+        <source>Add task</source>
+        <target>Dodaj zadanie</target>
+        <note>add_task_title</note>
+      </trans-unit>
+      <trans-unit id="Add tasks">
+        <source>Add tasks</source>
+        <target>Dodaj zadanie</target>
+        <note>prompt_add_tasks</note>
+      </trans-unit>
+      <trans-unit id="All fields are required">
+        <source>All fields are required</source>
+        <target>Wszystkie pola są wymagane</target>
+        <note>prompt_all_field_required
+   prompt_all_fields</note>
+      </trans-unit>
+      <trans-unit id="Are you sure?">
+        <source>Are you sure?</source>
+        <target>Jesteś pewien?</target>
+        <note>prompt_are_you_sure</note>
+      </trans-unit>
+      <trans-unit id="Change email">
+        <source>Change email</source>
+        <target>Zmień email</target>
+        <note>change_email_title
+   prompt_change_email</note>
+      </trans-unit>
+      <trans-unit id="Change name">
+        <source>Change name</source>
+        <target>Zmień imię</target>
+        <note>change_name_title
+   prompt_change_name</note>
+      </trans-unit>
+      <trans-unit id="Change password">
+        <source>Change password</source>
+        <target>Zmień hasło</target>
+        <note>change_password_title
+   prompt_change_password</note>
+      </trans-unit>
+      <trans-unit id="Check this app!">
+        <source>Check this app!</source>
+        <target>Sprawdź tą appke!</target>
+        <note>prompt_share_text</note>
+      </trans-unit>
+      <trans-unit id="Congratulations!">
+        <source>Congratulations!</source>
+        <target>Gratulacje!</target>
+        <note>congratulations_title</note>
+      </trans-unit>
+      <trans-unit id="Connect to home">
+        <source>Connect to home</source>
+        <target>Przyłącz do domu</target>
+        <note>prompt_connect_to_home</note>
+      </trans-unit>
+      <trans-unit id="Create home">
+        <source>Create home</source>
+        <target>Utwórz dom</target>
+        <note>prompt_create_home</note>
+      </trans-unit>
+      <trans-unit id="Delete">
+        <source>Delete</source>
+        <target>Usuń</target>
+        <note>prompt_delete</note>
+      </trans-unit>
+      <trans-unit id="Disconnect">
+        <source>Disconnect</source>
+        <target>Rozłącz</target>
+        <note>prompt_disconnect</note>
+      </trans-unit>
+      <trans-unit id="Done">
+        <source>Done</source>
+        <target>Gotowe</target>
+        <note>prompt_done</note>
+      </trans-unit>
+      <trans-unit id="Edit">
+        <source>Edit</source>
+        <target>Edytuj</target>
+        <note>prompt_edit</note>
+      </trans-unit>
+      <trans-unit id="Edit task">
+        <source>Edit task</source>
+        <target>Edytuj zadanie</target>
+        <note>edit_task_title</note>
+      </trans-unit>
+      <trans-unit id="Email">
+        <source>Email</source>
+        <target>Email</target>
+        <note>prompt_email</note>
+      </trans-unit>
+      <trans-unit id="Email field is required">
+        <source>Email field is required</source>
+        <target>Pole email jest wymagane</target>
+        <note>prompt_email_required</note>
+      </trans-unit>
+      <trans-unit id="Error">
+        <source>Error</source>
+        <target>Błąd</target>
+        <note>Error_title</note>
+      </trans-unit>
+      <trans-unit id="Feed">
+        <source>Feed</source>
+        <note>feed_title
+   prompt_feed</note>
+      </trans-unit>
+      <trans-unit id="Frequency">
+        <source>Frequency</source>
+        <target>Częstotliwość</target>
+        <note>prompt_frequency</note>
+      </trans-unit>
+      <trans-unit id="Frequency have to be bigger than zero!">
+        <source>Frequency have to be bigger than zero!</source>
+        <target>Częstotliwość musi być większa od zera</target>
+        <note>prompt_bigger_than_zero</note>
+      </trans-unit>
+      <trans-unit id="History">
+        <source>History</source>
+        <target>Historia</target>
+        <note>prompt_history</note>
+      </trans-unit>
+      <trans-unit id="Home ID">
+        <source>Home ID</source>
+        <target>Identyfikator domu</target>
+        <note>prompt_home_id</note>
+      </trans-unit>
+      <trans-unit id="Home ID:">
+        <source>Home ID:</source>
+        <target>Identyfikator domu:</target>
+        <note>prompt_home_id</note>
+      </trans-unit>
+      <trans-unit id="Home Password">
+        <source>Home Password</source>
+        <target>Hasło domu</target>
+        <note>prompt_home_password</note>
+      </trans-unit>
+      <trans-unit id="Home manager">
+        <source>Home manager</source>
+        <target>Menadżer domu</target>
+        <note>home_manager_title
+   prompt_home_manager</note>
+      </trans-unit>
+      <trans-unit id="Home password:">
+        <source>Home password:</source>
+        <target>Hasło domu:</target>
+        <note>prompt_home_password</note>
+      </trans-unit>
+      <trans-unit id="In">
+        <source>In</source>
+        <target>W ciągu</target>
+        <note>prompt_in</note>
+      </trans-unit>
+      <trans-unit id="Login">
+        <source>Login</source>
+        <target>Zaloguj</target>
+        <note>Login_button
+   Login_title
+   Welcome_btnLogin</note>
+      </trans-unit>
+      <trans-unit id="Logout">
+        <source>Logout</source>
+        <target>Wyloguj</target>
+        <note>prompt_logout</note>
+      </trans-unit>
+      <trans-unit id="Name">
+        <source>Name</source>
+        <target>Imię</target>
+        <note>prompt_name</note>
+      </trans-unit>
+      <trans-unit id="Name field is required">
+        <source>Name field is required</source>
+        <target>Pole imienia jest wymagane</target>
+        <note>prompt_name_required</note>
+      </trans-unit>
+      <trans-unit id="No">
+        <source>No</source>
+        <target>Nie</target>
+        <note>prompt_no</note>
+      </trans-unit>
+      <trans-unit id="No tasks!">
+        <source>No tasks!</source>
+        <target>Brak zadań!</target>
+        <note>prompt_no_tasks</note>
+      </trans-unit>
+      <trans-unit id="Not done">
+        <source>Not done</source>
+        <target>Nie gotowe</target>
+        <note>prompt_not_done</note>
+      </trans-unit>
+      <trans-unit id="Nothing to show!">
+        <source>Nothing to show!</source>
+        <target>Nic do pokazania!</target>
+        <note>prompt_nothing_to_show</note>
+      </trans-unit>
+      <trans-unit id="Now">
+        <source>Now</source>
+        <target>Teraz</target>
+        <note>prompt_now</note>
+      </trans-unit>
+      <trans-unit id="Number of task types">
+        <source>Number of task types</source>
+        <target>Liczba typów zadań</target>
+        <note>prompt_number_types</note>
+      </trans-unit>
+      <trans-unit id="OK">
+        <source>OK</source>
+        <target>Ok</target>
+        <note>prompt_ok</note>
+      </trans-unit>
+      <trans-unit id="OR">
+        <source>OR</source>
+        <target>LUB</target>
+        <note>prompt_OR</note>
+      </trans-unit>
+      <trans-unit id="Ok">
+        <source>Ok</source>
+        <target>Ok</target>
+        <note>prompt_ok</note>
+      </trans-unit>
+      <trans-unit id="Password">
+        <source>Password</source>
+        <target>Hasło</target>
+        <note>prompt_password</note>
+      </trans-unit>
+      <trans-unit id="Password is not correct!">
+        <source>Password is not correct!</source>
+        <target>Hasło jest niepoprawne!</target>
+        <note>prompt_password_not_correct</note>
+      </trans-unit>
+      <trans-unit id="Passwords are not identicaly">
+        <source>Passwords are not identicaly</source>
+        <target>Hasła się różnią</target>
+        <note>prompt_different_passwords</note>
+      </trans-unit>
+      <trans-unit id="Profile has been updated">
+        <source>Profile has been updated</source>
+        <target>Profil został zaktualizowany</target>
+        <note>prompt_profile_updated</note>
+      </trans-unit>
+      <trans-unit id="Pull to refresh">
+        <source>Pull to refresh</source>
+        <target>Pociągnij by odświeżyć</target>
+        <note>prompt_pull_to_refresh</note>
+      </trans-unit>
+      <trans-unit id="Register">
+        <source>Register</source>
+        <target>Zarejestruj</target>
+        <note>Register_button
+   Register_title
+   Welcome_btnRegister</note>
+      </trans-unit>
+      <trans-unit id="Repeat password">
+        <source>Repeat password</source>
+        <target>Powtórz hasło</target>
+        <note>prompt_repeat_password</note>
+      </trans-unit>
+      <trans-unit id="Save">
+        <source>Save</source>
+        <target>Zapisz</target>
+        <note>prompt_save</note>
+      </trans-unit>
+      <trans-unit id="Settings">
+        <source>Settings</source>
+        <target>Ustawienia</target>
+        <note>prompt_settings
+   settings_title</note>
+      </trans-unit>
+      <trans-unit id="Share">
+        <source>Share</source>
+        <target>Podziel się</target>
+        <note>prompt_share</note>
+      </trans-unit>
+      <trans-unit id="Success">
+        <source>Success</source>
+        <target>Powodzenie</target>
+        <note>Success_title</note>
+      </trans-unit>
+      <trans-unit id="Summary">
+        <source>Summary</source>
+        <target>Podsumowanie</target>
+        <note>prompt_summary
+   Summary_title</note>
+      </trans-unit>
+      <trans-unit id="Tasks manager">
+        <source>Tasks manager</source>
+        <target>Menadżer domu</target>
+        <note>prompt_tasks_manager
+   task_manager_title</note>
+      </trans-unit>
+      <trans-unit id="Title">
+        <source>Title</source>
+        <target>Tytuł</target>
+        <note>prompt_title</note>
+      </trans-unit>
+      <trans-unit id="Today">
+        <source>Today</source>
+        <target>Dziś</target>
+        <note>prompt_today
+   Today_title</note>
+      </trans-unit>
+      <trans-unit id="Tomorrow">
+        <source>Tomorrow</source>
+        <target>Jutro</target>
+        <note>prompt_tomorrow</note>
+      </trans-unit>
+      <trans-unit id="Undone">
+        <source>Undone</source>
+        <target>Nie zrobiono</target>
+        <note>prompt_undone</note>
+      </trans-unit>
+      <trans-unit id="Yes">
+        <source>Yes</source>
+        <target>Tak</target>
+        <note>prompt_yes</note>
+      </trans-unit>
+      <trans-unit id="Yesterday">
+        <source>Yesterday</source>
+        <target>Wczoraj</target>
+        <note>prompt_yesterday</note>
+      </trans-unit>
+      <trans-unit id="Your home has been created">
+        <source>Your home has been created</source>
+        <target>Twój dom został utworzony</target>
+        <note>prompt_home_created</note>
+      </trans-unit>
+      <trans-unit id="as ">
+        <source>as </source>
+        <note>feed_as</note>
+      </trans-unit>
+      <trans-unit id="days">
+        <source>days</source>
+        <target>dni</target>
+        <note>prompt_days</note>
+      </trans-unit>
+      <trans-unit id="days ago">
+        <source>days ago</source>
+        <target>dni temu</target>
+        <note>prompt_days_ago</note>
+      </trans-unit>
+      <trans-unit id="done!">
+        <source>done!</source>
+        <note>feed_done</note>
+      </trans-unit>
+      <trans-unit id="made by ">
+        <source>made by </source>
+        <note>feed_made_by</note>
+      </trans-unit>
+      <trans-unit id="undone!">
+        <source>undone!</source>
+        <note>feed_undone</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="to-do@HomeTests/Info.plist" source-language="en" datatype="plaintext" target-language="pl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.2" build-num="7C68"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="to-do@HomeUITests/Info.plist" source-language="en" datatype="plaintext" target-language="pl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="7.2" build-num="7C68"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -35,14 +35,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
         
-        
         if(PFUser.currentUser() == nil){
             loadWelcome()
         }else{
             PFUser.currentUser()?.fetchInBackground()
             loadMain()
         }
-        
         return true
     }
 
@@ -99,6 +97,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let menu = MenuViewController()
         menu.main = main
+        sw = SWRevealViewController(rearViewController: menu, frontViewController: navi)
+        
+        window?.rootViewController = sw
+        window?.makeKeyAndVisible()
+    }
+    
+    func loadFeed(){
+        window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
+        let main = FeedViewController()
+        navi = UINavigationController.init(rootViewController: main)
+        navi.navigationBar.barStyle = UIBarStyle.Black
+        navi.navigationBar.translucent = false
+        navi.navigationBar.barTintColor = kColorDark
+        navi.navigationBar.tintColor = kColorWhite
+        
+        let menu = MenuViewController()
+        //menu.main = main
         sw = SWRevealViewController(rearViewController: menu, frontViewController: navi)
         
         window?.rootViewController = sw

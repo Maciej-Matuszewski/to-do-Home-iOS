@@ -160,6 +160,7 @@ class TasksManagerViewController: UIViewController, UITableViewDataSource, UITab
                 taskType.saveInBackgroundWithBlock({ (success, error) -> Void in
                     if error == nil {
                         addEditTaskVC.dismissViewControllerAnimated(true, completion: nil)
+                        generateFeedItem(FeedItemType.TYPE_EDIT, objectTitle: title)
                     }
                 })
             }
@@ -179,6 +180,8 @@ class TasksManagerViewController: UIViewController, UITableViewDataSource, UITab
         let deleteAction = UITableViewRowAction(style: .Normal, title: NSLocalizedString("Delete", comment: "prompt_delete")) { (action, indexP) -> Void in
             
             let task = self.tasksTypes[indexPath.row]
+            
+            generateFeedItem(FeedItemType.TYPE_DELETE, objectTitle: task["title"] as! String)
             task.deleteInBackgroundWithBlock({ (success, error) -> Void in
                 if(error == nil){
                     self.loadData()
@@ -217,6 +220,7 @@ class TasksManagerViewController: UIViewController, UITableViewDataSource, UITab
             taskType.saveInBackgroundWithBlock({ (success, error) -> Void in
                 if error == nil {
                     addEditTaskVC.dismissViewControllerAnimated(true, completion: nil)
+                    generateFeedItem(FeedItemType.TYPE_ADD, objectTitle: taskType["title"] as! String)
                 }
             })
         }

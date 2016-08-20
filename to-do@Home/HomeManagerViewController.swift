@@ -87,6 +87,7 @@ class HomeManagerViewController: UIViewController {
         yesNoController.yesColor = kColorRed
         yesNoController.completionBlock = { (response) -> Void in
             if (response == true){
+                generateFeedItem(FeedItemType.HOME_DISCONNECT, objectTitle: "")
                 PFUser.currentUser()?.removeObjectForKey("home")
                 PFUser.currentUser()?.saveInBackgroundWithBlock({ (user, error) -> Void in
                     (UIApplication.sharedApplication().delegate as! AppDelegate).navi.setViewControllers([MainViewController()], animated: false)

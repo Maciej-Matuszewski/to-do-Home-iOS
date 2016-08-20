@@ -21,6 +21,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var bannerView: GADBannerView!
     var interstitial: GADInterstitial!
+    var reloadDataStatus = true
     
     
     override func didReceiveMemoryWarning() {
@@ -58,14 +59,11 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         
         
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-(==70)-[image(==200)]-(==20)-[label]-(>=30)-[button]", options: NSLayoutFormatOptions.AlignAllCenterX, metrics: nil, views: ["image" : imageView, "label" : nothingLabel, "button" : addButton]))
-        
-        
         view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[image(==200)]", options: NSLayoutFormatOptions.AlignAllCenterX, metrics: nil, views: ["image" : imageView]))
         view.addConstraint(NSLayoutConstraint.init(item: nothingLabel, attribute: .CenterX, relatedBy: .Equal, toItem: view, attribute: .CenterX, multiplier: 1.0, constant: 1.0))
         
         navigationController?.setNavigationBarHidden(false, animated: true)
-        navigationItem.title = NSString.init(format: "%@: %@", NSLocalizedString("Today", comment: "Today_title"), NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .MediumStyle, timeStyle: NSDateFormatterStyle.NoStyle)) as String
+        navigationItem.title = NSString.init(format: "%@: %@", NSLocalizedString("Today", comment: "Today_title"), NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .LongStyle, timeStyle: NSDateFormatterStyle.NoStyle)) as String
         
         navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "menu"), style: UIBarButtonItemStyle.Plain, target: self, action: "toggleMenu")
         
@@ -88,6 +86,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         bannerView.rootViewController = self
         let adRequest = GADRequest()
         bannerView.loadRequest(adRequest)
+
         view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[banner]|", options: [], metrics: nil, views: ["banner" : bannerView]))
         view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[banner]|", options: [], metrics: nil, views: ["banner" : bannerView]))
         
@@ -115,20 +114,28 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             navigationController.navigationBar.translucent = false
             navigationController.navigationBar.barTintColor = kColorDark
             navigationController.navigationBar.tintColor = kColorWhite
-            self.presentViewController(navigationController, animated: true, completion: { () -> Void in
-                self.loadData()
-            })
+            self.presentViewController(navigationController, animated: true, completion: nil)
         }else{
-            loadData()
+            if !reloadDataStatus{
+                reloadDataStatus = true
+                return
+            }else{
+                loadData()
+            }
         }
     }
     
     func showAd(){
         if interstitial.isReady{
             interstitial.presentFromRootViewController(self)
+            
         }else{
             performSelector("showAd", withObject: nil, afterDelay: 1)
         }
+    }
+    
+    func interstitialWillPresentScreen(ad: GADInterstitial!) {
+        reloadDataStatus = false
     }
     
     // MARK: - Buttons handlers
@@ -157,6 +164,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             taskType.saveInBackgroundWithBlock({ (success, error) -> Void in
                 if error == nil {
                     addEditTaskVC.dismissViewControllerAnimated(true, completion: nil)
+                    generateFeedItem(FeedItemType.TYPE_ADD, objectTitle: taskType["title"] as! String)
                 }
             })
         }
@@ -260,6 +268,12 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        if(indexPath.section >= self.sections.count){
+            return []
+        }
+        if(indexPath.row >= self.sections[indexPath.section].array.count){
+            return []
+        }
         let doneAction = UITableViewRowAction(style: UITableViewRowActionStyle.Normal, title: NSLocalizedString("Done", comment: "prompt_done")) { (action, indexPath) -> Void in
             
             tableView.setEditing(false, animated: true)
@@ -268,6 +282,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {
                     self.reloadData()
+                    generateFeedItem(FeedItemType.TASK_DONE, objectTitle: self.sections[indexPath.section].array[indexPath.row]["title"] as! String)
                 }
             }
         }
@@ -280,6 +295,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {
                     self.reloadData()
+                    generateFeedItem(FeedItemType.TASK_UNDONE, objectTitle: self.sections[indexPath.section].array[indexPath.row]["title"] as! String)
                 }
             }
         }

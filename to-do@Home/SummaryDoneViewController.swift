@@ -41,15 +41,9 @@ class SummaryDoneViewController: UIViewController, UITableViewDataSource, UITabl
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
         loadData()
+        
     }
-    
     
     func refresh(sender:AnyObject)
     {
@@ -184,6 +178,15 @@ class SummaryDoneViewController: UIViewController, UITableViewDataSource, UITabl
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {
                     self.reloadData()
+                
+                    task["user"].fetchInBackgroundWithBlock { (user, error) -> Void in
+                        if(error == nil){
+                            
+                            generateFeedItem(FeedItemType.TASK_LIKE, objectTitle: task["title"] as! String, objectUserName: (user!["name"] as? String)!)
+                        }
+                    }
+                    
+                    
                 }
             }
         }
@@ -199,6 +202,13 @@ class SummaryDoneViewController: UIViewController, UITableViewDataSource, UITabl
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {
                     self.reloadData()
+                    
+                    task["user"].fetchInBackgroundWithBlock { (user, error) -> Void in
+                        if(error == nil){
+                            
+                            generateFeedItem(FeedItemType.TASK_DISLIKE, objectTitle: task["title"] as! String, objectUserName: (user!["name"] as? String)!)
+                        }
+                    }
                 }
             }
         }

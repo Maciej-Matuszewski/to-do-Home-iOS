@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Parse
 
 // MARK: - Generators UI Elements
 
@@ -184,6 +185,27 @@ func generateSeparator(color : UIColor, parentView : UIView) -> UIView{
     parentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[separator]-|", options: [], metrics: nil, views: ["separator" : separator]))
     
     return separator
+}
+
+func generateFeedItem(type: String, objectTitle: String){
+    let item = PFObject(className: "Feed")
+    item["type"] = type
+    item["objectTitle"] = objectTitle
+    item["user"] = PFUser.currentUser()
+    item["userName"] = PFUser.currentUser()!["name"]
+    item["home"] = PFUser.currentUser()!["home"]
+    item.saveInBackground()
+}
+
+func generateFeedItem(type: String, objectTitle: String, objectUserName: String){
+    let item = PFObject(className: "Feed")
+    item["type"] = type
+    item["objectTitle"] = objectTitle
+    item["objectUserName"] = objectUserName
+    item["user"] = PFUser.currentUser()
+    item["userName"] = PFUser.currentUser()!["name"]
+    item["home"] = PFUser.currentUser()!["home"]
+    item.saveInBackground()
 }
 
 // MARK: - Support function

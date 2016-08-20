@@ -96,7 +96,7 @@ class AddHomeViewController: UIViewController {
                     PFUser.currentUser()!["home"] = home
                     PFUser.currentUser()?.saveInBackground()
                     self.dismissViewControllerAnimated(true) { () -> Void in
-                        
+                        generateFeedItem(FeedItemType.HOME_CONNECT, objectTitle: "")
                     }
                 }else{
                     UIAlertView.init(title: NSLocalizedString("Error", comment: "Error_title"), message: NSLocalizedString("Password is not correct!", comment: "prompt_password_not_correct"), delegate: nil, cancelButtonTitle: NSLocalizedString("Ok", comment: "prompt_ok")).show()
@@ -124,7 +124,9 @@ class AddHomeViewController: UIViewController {
                 home.saveInBackgroundWithBlock { (success, error) -> Void in
                     if(success){
                         PFUser.currentUser()!["home"] = home
-                        PFUser.currentUser()?.saveInBackground()
+                        PFUser.currentUser()?.saveInBackgroundWithBlock({ (success, error) -> Void in
+                            generateFeedItem(FeedItemType.HOME_CREATE, objectTitle: "")
+                        })
                         self.navigationController?.setViewControllers([HomeCreatedViewController()], animated: true)
                     }
                 }

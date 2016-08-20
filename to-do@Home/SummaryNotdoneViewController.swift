@@ -40,12 +40,8 @@ class SummaryNotdoneViewController: UIViewController, UITableViewDataSource, UIT
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
         loadData()
+        
     }
     
     func refresh(sender:AnyObject)

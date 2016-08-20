@@ -1,3 +1,30 @@
+/* feed_add_type */
+" add type of task:" = " dodał(a) typ zadania:";
+
+/* feed_created_home */
+" created home!" = " utworzył(a) dom!";
+
+/* feed_delete_type */
+" delete type of task:" = " usunął/ęła typ zadania:";
+
+/* feed_disconect_home */
+" disconected from home!" = " odłączył(a) się od domu!";
+
+/* feed_dislike */
+" dislike" = " lubi";
+
+/* feed_edit_type */
+" edit type of task:" = " edytował(a) typ zadania:";
+
+/* feed_joined_home */
+" joined to home!" = " dołączył(a) do domu!";
+
+/* feed_like */
+" like" = " lubi";
+
+/* feed_marked */
+" marked" = " oznaczył(a)";
+
 /* Add_home_title */
 "Add home" = "Dołącz do domu";
 
@@ -61,6 +88,10 @@
 
 /* Error_title */
 "Error" = "Błąd";
+
+/* feed_title
+   prompt_feed */
+"Feed" = "Aktualności";
 
 /* prompt_frequency */
 "Frequency" = "Częstotliwość";
@@ -197,9 +228,21 @@
 /* prompt_home_created */
 "Your home has been created" = "Twój dom został utworzony";
 
+/* feed_as */
+"as " = "jako ";
+
 /* prompt_days */
 "days" = "dni";
 
 /* prompt_days_ago */
 "days ago" = "dni temu";
+
+/* feed_done */
+"done!" = "zrobione!";
+
+/* feed_made_by */
+"made by " = "zrobione przez ";
+
+/* feed_undone */
+"undone!" = "nie zrobione!";
 

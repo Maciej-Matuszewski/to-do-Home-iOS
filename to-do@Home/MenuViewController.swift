@@ -12,9 +12,6 @@ import Parse
 class MenuViewController: UIViewController {
     
     var main: MainViewController!
-    var summary: SummaryTabBarController!
-    var homeManager: HomeManagerViewController!
-    var settings: SettingsViewController!
     
     let name = UILabel.init()
     let email = UILabel.init()
@@ -29,16 +26,18 @@ class MenuViewController: UIViewController {
         view.addSubview(container)
         
         let now = generateMenuButton("now", title: NSLocalizedString("Now", comment: "prompt_now"), function:"nowFunc", controller: self)
+        let feed = generateMenuButton("feed", title: NSLocalizedString("Feed", comment: "prompt_feed"), function:"feedFunc", controller: self)
         let summary = generateMenuButton("summary", title: NSLocalizedString("Summary", comment: "prompt_summary"), function:"summaryFunc", controller: self)
         let homeManager = generateMenuButton("home", title: NSLocalizedString("Home manager", comment: "prompt_home_manager"), function: "homeManagerFunc", controller: self)
         let settings = generateMenuButton("settings", title: NSLocalizedString("Settings", comment: "prompt_settings"), function: "settingsFunc", controller: self)
-        let share = generateMenuButton("share", title: NSLocalizedString("Share", comment: "prompt_share"), function: "shareFunc", controller: self)
+        //let share = generateMenuButton("share", title: NSLocalizedString("Share", comment: "prompt_share"), function: "shareFunc", controller: self)
         
         view.addSubview(now)
+        view.addSubview(feed)
         view.addSubview(summary)
         view.addSubview(homeManager)
         view.addSubview(settings)
-        view.addSubview(share)
+        //view.addSubview(share)
         
         let separator = UIView.init()
         separator.backgroundColor = kColorWhite
@@ -50,7 +49,12 @@ class MenuViewController: UIViewController {
         
         view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[container]|", options: .AlignAllCenterX, metrics: nil, views: ["container" : container]))
         
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[container(==150)][separator(==2)]-(==20)-[now]-[summary]-[homeManager]-[settings]-[share]", options: .AlignAllCenterX, metrics: nil, views: ["container" : container,"separator" : separator, "now" : now, "summary" : summary, "homeManager" : homeManager, "settings" : settings, "share" : share]))
+        if DeviceType.IS_IPHONE_4_OR_LESS{
+            view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[container(==150)][separator(==2)]-(==20)-[now][feed][summary][homeManager][settings]", options: .AlignAllCenterX, metrics: nil, views: ["container" : container,"separator" : separator, "now" : now, "feed" : feed, "summary" : summary, "homeManager" : homeManager, "settings" : settings]))
+        }else{
+            view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[container(==150)][separator(==2)]-(==20)-[now]-[feed]-[summary]-[homeManager]-[settings]", options: .AlignAllCenterX, metrics: nil, views: ["container" : container,"separator" : separator, "now" : now, "feed" : feed, "summary" : summary, "homeManager" : homeManager, "settings" : settings]))
+        }
+        
         
         let logo = UIImageView.init(image: UIImage.init(named: "logo_text_white"))
         logo.contentMode = .ScaleAspectFit
@@ -93,45 +97,32 @@ class MenuViewController: UIViewController {
         (UIApplication.sharedApplication().delegate as! AppDelegate).sw.revealToggleAnimated(true)
     }
     
+    func feedFunc(){
+        (UIApplication.sharedApplication().delegate as! AppDelegate).navi.setViewControllers([FeedViewController()], animated: false)
+        (UIApplication.sharedApplication().delegate as! AppDelegate).sw.revealToggleAnimated(true)
+    }
+    
     func summaryFunc(){
-        if(summary == nil){
-            summary = SummaryTabBarController()
-        }
-        (UIApplication.sharedApplication().delegate as! AppDelegate).navi.setViewControllers([summary], animated: false)
+        (UIApplication.sharedApplication().delegate as! AppDelegate).navi.setViewControllers([SummaryTabBarController()], animated: false)
         (UIApplication.sharedApplication().delegate as! AppDelegate).sw.revealToggleAnimated(true)
     }
     func homeManagerFunc(){
-        if(homeManager == nil){
-            homeManager = HomeManagerViewController()
-        }
-        (UIApplication.sharedApplication().delegate as! AppDelegate).navi.setViewControllers([homeManager], animated: false)
+        (UIApplication.sharedApplication().delegate as! AppDelegate).navi.setViewControllers([HomeManagerViewController()], animated: false)
         (UIApplication.sharedApplication().delegate as! AppDelegate).sw.revealToggleAnimated(true)
     }
     func settingsFunc(){
-        if(settings == nil){
-            settings = SettingsViewController()
-        }
-        (UIApplication.sharedApplication().delegate as! AppDelegate).navi.setViewControllers([settings], animated: false)
+        (UIApplication.sharedApplication().delegate as! AppDelegate).navi.setViewControllers([SettingsViewController()], animated: false)
         (UIApplication.sharedApplication().delegate as! AppDelegate).sw.revealToggleAnimated(true)
     }
     func shareFunc(){
         
-        PFConfig.getConfigInBackgroundWithBlock {
-            (config: PFConfig?, error: NSError?) -> Void in
-            
-            let textToShare = NSLocalizedString("Check this app!", comment: "prompt_share_text")
-            
-            if let myWebsite = NSURL(string: (config?["website"] as? String)!)
-            {
-                let objectsToShare = [textToShare, myWebsite]
-                let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
-                
-                self.presentViewController(activityVC, animated: true, completion: nil)
-            }
-            
-        }
-
+        let textToShare = NSLocalizedString("Check this app!", comment: "prompt_share_text")
         
+        let myWebsite = NSURL(string: "http://todoathome.pl")
+        
+        let activityVC = UIActivityViewController(activityItems: [textToShare, myWebsite!], applicationActivities: nil)
+        
+        self.presentViewController(activityVC, animated: true, completion: nil)
         
         
     }

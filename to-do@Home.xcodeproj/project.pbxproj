@@ -34,6 +34,8 @@
 		146FCFE51C3FB21A000E1DE7 /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146FCFE41C3FB21A000E1DE7 /* ChangeNameViewController.swift */; };
 		146FCFE71C3FB7CB000E1DE7 /* ChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146FCFE61C3FB7CB000E1DE7 /* ChangeEmailViewController.swift */; };
 		147B34461C3FB96800C13E01 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147B34451C3FB96800C13E01 /* ChangePasswordViewController.swift */; };
+		14ACEFB91C4780F600C99560 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACEFB81C4780F600C99560 /* FeedViewController.swift */; };
+		14ACEFBB1C47A08F00C99560 /* FeedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACEFBA1C47A08F00C99560 /* FeedItemTableViewCell.swift */; };
 		14D019FC1C3D4F080005A915 /* Generators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D019FB1C3D4F080005A915 /* Generators.swift */; };
 		14F6A0EB1C4015B600DA5DDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14F6A0ED1C4015B600DA5DDA /* InfoPlist.strings */; };
 		14F6A0F01C4015B700DA5DDA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14F6A0F21C4015B700DA5DDA /* Localizable.strings */; };
@@ -93,6 +95,8 @@
 		146FCFE41C3FB21A000E1DE7 /* ChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
 		146FCFE61C3FB7CB000E1DE7 /* ChangeEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewController.swift; sourceTree = "<group>"; };
 		147B34451C3FB96800C13E01 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		14ACEFB81C4780F600C99560 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		14ACEFBA1C47A08F00C99560 /* FeedItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemTableViewCell.swift; sourceTree = "<group>"; };
 		14D019FB1C3D4F080005A915 /* Generators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generators.swift; sourceTree = "<group>"; };
 		14F6A0E81C4014B400DA5DDA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		14F6A0EC1C4015B600DA5DDA /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 			children = (
 				140E94CF1C3C5AA700901FA7 /* TaskMainTableViewCell.swift */,
 				141669711C3E4D730060C9CE /* TaskDoneTableViewCell.swift */,
+				14ACEFBA1C47A08F00C99560 /* FeedItemTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 				146FCFE11C3F9AF9000E1DE7 /* Tasks Manager */,
 				147B34471C3FC04A00C13E01 /* Settings */,
 				140E94D11C3C7F1000901FA7 /* MenuViewController.swift */,
+				14ACEFB81C4780F600C99560 /* FeedViewController.swift */,
 				140E94CD1C3C441A00901FA7 /* MainViewController.swift */,
 			);
 			path = "to-do@Home";
@@ -508,6 +514,8 @@
 				1416697C1C3F72BC0060C9CE /* TasksManagerViewController.swift in Sources */,
 				146FCFE71C3FB7CB000E1DE7 /* ChangeEmailViewController.swift in Sources */,
 				141669741C3E5E6A0060C9CE /* HomeManagerViewController.swift in Sources */,
+				14ACEFBB1C47A08F00C99560 /* FeedItemTableViewCell.swift in Sources */,
+				14ACEFB91C4780F600C99560 /* FeedViewController.swift in Sources */,
 				140E94D21C3C7F1000901FA7 /* MenuViewController.swift in Sources */,
 				14D019FC1C3D4F080005A915 /* Generators.swift in Sources */,
 			);

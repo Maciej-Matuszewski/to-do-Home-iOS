@@ -1,10 +1,10 @@
 PODS:
-  - Bolts/Tasks (1.5.1)
-  - Crashlytics (3.5.0):
-    - Fabric (~> 1.6.0)
-  - Fabric (1.6.2)
+  - Bolts/Tasks (1.6.0)
+  - Crashlytics (3.6.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.3)
   - Google-Mobile-Ads-SDK (7.6.0)
-  - Parse (1.11.0):
+  - Parse (1.12.0):
     - Bolts/Tasks (~> 1.5)
   - SWRevealViewController (2.3.0)
 
@@ -16,11 +16,11 @@ DEPENDENCIES:
   - SWRevealViewController
 
 SPEC CHECKSUMS:
-  Bolts: a12663244b1d3351c738882e71902fc74db54f64
-  Crashlytics: fabfd45d0e8b8dc936c682b97e302b9a49a1c827
-  Fabric: e8296d4a1abb3c5eed770cc86b311c862f51d340
+  Bolts: f52a250053bb517ca874523c3913776359ab3def
+  Crashlytics: e4e8d02914f2608fbc7bf42b1a7af838b0db67a2
+  Fabric: cbe0ca6c9531bba17910052f6f105fcbc5fa7f67
   Google-Mobile-Ads-SDK: 0290020329c61183c4685304264b73382bc49fb4
-  Parse: 886af46a0a677402f6374bb97ac212e795f70afe
+  Parse: de2c52a9a1421b91ae7594ab8ce191afd184f19b
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
 COCOAPODS: 0.39.0
